@@ -38,4 +38,3 @@ For questions, collaborations, or suggestions, please contact the project's lead
 
 ---
 
-This `README.md` provides an overview and introduction to the project, designed to be clear, informative, and welcoming to new contributors.
