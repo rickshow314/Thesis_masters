@@ -1,0 +1,31 @@
+Actividades a llevar a cabo:
+- Familiarización con las bases de datos. Consulta y examen de las bases de datos
+seleccionadas para comprender su estructura y qué información proporcionan.
+- Desarrollo de un modelo conceptual. Generación de un diagrama con las entidades y
+relaciones que se van a incluir en el modelo. Dicho diagrama partirá con la información
+considerada más básica y podrá ampliarse en cualquier momento mediante la inclusión
+de nuevas tripletas en el modelo. Destacar que la información considerada básica cuenta
+con un enfoque subjetivo, por lo que siempre es debatible y cuestionable.
+Podemos considerar como información básica y mínima: label (nombre/representación
+de la mutación), type (clase o instancia), subClassOf (subclase de mutación, utilizar
+Sequence Ontology como referencia), definition (breve descripción), coordenadas (chr,
+start, end, strand), ensamblado de referencia (utilizar hg38), taxón (en este caso será
+siempre Homo sapiens, puesto que solo vamos a trabajar con mutaciones humanas),
+base de dato que proporciona la información, sinónimos (representación de la mutación
+siguiendo otros estándares).
+La información de enriquecimiento es la que más varía entre repositorios. Ejemplos:
+muestra biológica utilizada, artículo de referencia, metodología experimental utilizada
+en su identificación, secuencia afectada, significancia clínica, fenotipo correspondiente,
+etc.
+Como se ha comentado anteriormente, el objetivo es generar un modelo RDF, por lo que
+los datos deberán corresponder a recursos web. Es decir, si nos encontramos con
+cadenas de texto en las bases de datos, intentaremos mapear dichos términos con
+ontologías de referencia.
+Este modelo es la etapa clave del trabajo, por lo que es fundamental tener y presentar
+un borrador de este modelo antes de empezar con el procesamiento de las bases de
+datos. Este modelo incluirá los vocabularios (ontologías) que se van a utilizar, pero en
+sus etapas iniciales no es necesario, ya que el equipo podrá guiarte en la selección de
+los mejores vocabularios para la representación de cada dominio. Por este mismo
+motivo no se presentan en este documento los vocabularios actualmente utilizados,
+porque dependerá en primer lugar de qué se incluya en el modelo. El primer borrador
+es un planteamiento de las entidades a incluir.
