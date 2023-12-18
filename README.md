@@ -34,7 +34,7 @@ This project is open to contributions from students, researchers, and anyone int
 
 ## Contact
 
-For questions, collaborations, or suggestions, please contact the project's lead author via [contact email].
+For questions, collaborations, or suggestions, please contact the project's lead author via [ricardo.urdiales@um.es].
 
 ---
 
