@@ -67,7 +67,7 @@ WHERE {
 
 ## Query 5:
 ```bash
-PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX bao: <http://www.bioassayontology.org/bao#>
