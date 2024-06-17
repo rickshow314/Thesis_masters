@@ -1,6 +1,7 @@
 # Queries performed using SPARQL:
 
-## Query 1: This query retrieves different types of genetic variants present in various databases. It helps in understanding the diversity of variant types and their classifications.
+## Query 1: 
+This query retrieves different types of genetic variants present in various databases. It helps in understanding the diversity of variant types and their classifications.
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -18,7 +19,8 @@ ORDER BY ?tipoVariante
 
 ```
 
-## Query 2:This query determines which chromosome most frequently contains deletions, using data from 1310 deletions found predominantly on chromosome 17.
+## Query 2:
+This query determines which chromosome most frequently contains deletions, using data from 1310 deletions found predominantly on chromosome 17.
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
@@ -34,7 +36,8 @@ LIMIT 1
 
 ```
 
-## Query 3:This query identifies the most probable variant type associated with the gene ACTA2, highlighting the variant type that appears most frequently.
+## Query 3:
+This query identifies the most probable variant type associated with the gene ACTA2, highlighting the variant type that appears most frequently.
 ```sparql
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX bgw_hgene: <http://rdf.biogateway.eu/gene/9606/>
@@ -51,7 +54,8 @@ LIMIT 1
 
 ```
 
-## Query 4:This query explores the relationship between variants and a specific disease (Aortic aneurysm, OMIM: 617349), focusing on determining their clinical significance.
+## Query 4:
+This query explores the relationship between variants and a specific disease (Aortic aneurysm, OMIM: 617349), focusing on determining their clinical significance.
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
@@ -65,7 +69,8 @@ WHERE {
 
 ```
 
-## Query 5:This query determines the most frequently used method for detecting variants whose affected chromosome is 17. The most common method identified is DNA-seq.
+## Query 5:
+This query determines the most frequently used method for detecting variants whose affected chromosome is 17. The most common method identified is DNA-seq.
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
