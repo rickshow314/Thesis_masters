@@ -42,9 +42,3 @@ If you wish to contribute to this project, please follow the guidelines below:
 - Include examples and test cases when possible.
 - Make a pull request with a detailed description of your changes.
 
-## Contact us
-
-For any questions related to this project, please contact [ricardo.urdiales.munoz@gmail.com].
-
-Thanks for your collaboration!
-
