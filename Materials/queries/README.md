@@ -1,7 +1,7 @@
 # Queries performed using SPARQL:
 
 ## Query 1:
-```bash
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
@@ -19,7 +19,7 @@ ORDER BY ?tipoVariante
 ```
 
 ## Query 2:
-```bash
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 
@@ -35,7 +35,7 @@ LIMIT 1
 ```
 
 ## Query 3:
-```bash
+```sparql
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX bgw_hgene: <http://rdf.biogateway.eu/gene/9606/>
 
@@ -52,7 +52,7 @@ LIMIT 1
 ```
 
 ## Query 4:
-```bash
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX bgw_disease: <http://rdf.biogateway.eu/disease/>
@@ -66,7 +66,7 @@ WHERE {
 ```
 
 ## Query 5:
-```bash
+```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 PREFIX obo: <http://purl.obolibrary.org/obo/>
