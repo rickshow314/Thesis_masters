@@ -1,0 +1,281 @@
+prefixes:
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"      
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  obo: "http://purl.obolibrary.org/obo/"
+  owl: "http://www.w3.org/2002/07/owl#"
+  bgw_hvariant: "http://rdf.biogateway.eu/variant/9606/" # posible cambio
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  sio: "http://semanticscience.org/resource/"
+  biolink: "https://w3id.org/biolink/vocab/"
+  bao: "http://www.bioassayontology.org/bao#"
+  ncbigene: "https://www.ncbi.nlm.nih.gov/gene/"
+  bgw_hgene: "http://rdf.biogateway.eu/gene/9606/" # posible cambio, es necesario usarla? he usado obo
+  bgw_database: "https://www.ncbi.nlm.nih.gov/"
+  nuccore: "https://www.ncbi.nlm.nih.gov/nuccore/"
+  assembly: "https://www.ncbi.nlm.nih.gov/assembly/"
+  dc: "http://purl.org/dc/terms/"
+  efo: "http://www.ebi.ac.uk/efo/"
+  ensembl_glossary: "http://ensembl.org/glossary/"
+  
+  
+mappings:
+  variant_mapping:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: bgw_hvariant:$(ID_merged) # identificador
+    po:
+      - [rdf:type, obo:$(variant_type_uri)]
+      - [skos:prefLabel, "variant/$(ID_merged)", xsd:string]
+      - [skos:altLabel, "$(desc)$(POS)", xsd:string]
+      - [skos:definition, "SNV located in Homo sapiens position chr$(CHROM):$(POS) produce by a $(variant_type)", xsd:string]
+      - [obo:GENO_0000894, $(POS), xsd:integer]
+      - [obo:GENO_0000895, $(END), xsd:integer]
+      - [sio:SIO_000253, ensembl_glossary:ENSGLOSSARY_0000235]  # Link to the database instance
+      - [bao:BAO_0000207, obo:$(method_uri)]  # Link to the method instance
+      - [bao:BAO_0000207, efo:$(method_uri_efo)]  # Link to the method instance
+      - [bao:BAO_0000207, bao:$(method_uri_bao)]  # Link to the method instance
+      - [obo:BFO_0000050, nuccore:$(CHROM_uri)] # Link to the Chromosome instance
+      - [obo:RO_0002131, "obo:$(gene)"]  # overlap with gene
+      - [obo:RO_0002162, obo:NCBITaxon_9606]  # Enlace a la instancia NCBITaxon_9606
+      - [dc:hasVersion, assembly:GCF_000001405.26]  # Enlace a la instancia assembly:GCF_000001405.26
+      - [biolink:category, biolink:SequenceVariant]
+
+  database_mapping:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: ensembl_glossary:ENSGLOSSARY_0000235
+    po:
+      #- [a, ensembl_glossary:ENSGLOSSARY_0000235]
+      - [rdf:type, owl:Class]
+      - [skos:prefLabel, "$(DB)", xsd:string]
+      - [biolink:category, biolink:InformationResource] # Enlace a InformationResource
+      
+  information_resource_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:InformationResource
+    po:
+      - [a, biolink:InformationResource]
+      - [skos:prefLabel, "information resource", xsd:string]
+
+  ncit_database_mapping:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:NCIT_C15426
+    po:
+      - [a, obo:NCIT_C15426]
+      - [skos:prefLabel, "Database", xsd:string]
+      - [rdfs:subClassOf, ensembl_glossary:ENSGLOSSARY_0000235]
+      - [biolink:category, biolink:OntologyClass]
+
+  variant_type_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:$(variant_type_uri)
+    po:
+      #- [a, bgw_hvariant:$(ID_merged)]
+      - [rdf:type, owl:Class]
+      - [skos:prefLabel, "$(variant_type)", xsd:string]
+      - [rdfs:subClassOf, obo:SO_0001059]  # Enlace a la instancia obo:SO_0001059
+
+  sequence_alteration_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:SO_0001059
+    po:
+      - [a, obo:SO_0001059]  # RDF type for sequence alteration
+      - [skos:prefLabel, "sequence alteration", xsd:string]
+      - [biolink:category, biolink:OntologyClass]
+
+  ontology_class_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:OntologyClass
+    po:
+      - [rdf:type, biolink:OntologyClass]
+      - [skos:prefLabel, "ontology class", xsd:string]
+
+  sequence_variant_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:SequenceVariant
+    po:
+      - [a, biolink:SequenceVariant]
+      - [skos:prefLabel, "sequence variant", xsd:string]
+
+  ncbitaxon_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:NCBITaxon_9606
+    po:
+      - [obo:RO_0002162, obo:NCBITaxon_9606]
+      - [biolink:category, biolink:OrganismTaxon]  # Enlace a la instancia OrganismTaxon
+      - [skos:prefLabel, "organism taxon", xsd:string]
+
+  organism_taxon_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:OrganismTaxon
+    po:
+      - [a, biolink:OrganismTaxon]
+      - [skos:prefLabel, "ontology class", xsd:string]
+
+  # Definición de la entidad assembly_class
+  assembly_class:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: assembly:GCF_000001405.26
+    po:
+      - [rdf:type, owl:Class]
+      #- [a, assembly:GCF_000001405.26]  # RDF type for genome assembly
+      - [skos:prefLabel, "GRCh38", xsd:string]
+      - [skos:altLabel, "hg38", xsd:string]
+      - [biolink:category, biolink:Genome]  # Link to biolink:Genome
+      - [rdfs:subClassOf, obo:SO_0001505]  # Subclass of reference genome
+
+  genome_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:Genome
+    po:
+      - [a, biolink:Genome]  # RDF type for biolink:Genome
+      - [skos:prefLabel, "genome", xsd:string]  # Preferred label for biolink:Genome
+
+  assembly_to_genome:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: assembly:GCF_000001405.26
+    po:
+      - [biolink:category, biolink:Genome]
+      - [skos:prefLabel, "genome", xsd:string]  # Contextualizando la etiqueta para la relación
+
+  reference_genome_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:SO_0001505
+    po:
+      - [a, obo:SO_0001505]  # RDF type for reference genome
+      - [skos:prefLabel, "reference genome", xsd:string]  # Preferred label for reference genome
+      - [biolink:category, biolink:OntologyClass]  # Link to biolink:OntologyClass
+
+  chromosome_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: nuccore:$(CHROM_uri)
+    po:
+      - [rdf:type, owl:Class]
+      - [skos:prefLabel, "chr-$(CHROM)", xsd:string]  # Preferred label for chromosome
+      - [biolink:category, biolink:GenomicSequenceLocalization]  # Link to biolink:GenomicSequenceLocalization
+      - [rdfs:subClassOf, obo:SO_0000340]  # Subclass of SO:0000340
+
+  genomic_sequence_localization_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:GenomicSequenceLocalization
+    po:
+      - [a, biolink:GenomicSequenceLocalization]  # RDF type for genomic sequence localization
+      - [skos:prefLabel, "genomic sequence localization", xsd:string]  # Preferred label for genomic sequence localization
+
+  chromosome_ontology_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:SO_0000340
+    po:
+      - [a, obo:SO_0000340]  # RDF type for SO:0000340
+      - [skos:prefLabel, "chromosome", xsd:string]  # Preferred label for SO:0000340
+      - [biolink:category, biolink:OntologyClass]  # Link to biolink:OntologyClass
+
+  gene_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: bgw_hgene:$(gene)
+    po:
+      - [skos:prefLabel, "$(gene)", xsd:string]  # Preferred label for gene
+      - [skos:closeMatch, ncbigene:$(gene_uri)]
+
+  biolink_gene_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:Gene
+    po:
+      - [a, biolink:Gene]  # RDF type for biolink:Gene
+      - [skos:prefLabel, "gene", xsd:string]
+
+  method_mapping:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:$(method_uri)
+    po:
+      - [skos:prefLabel, "$(method)", xsd:string] # Etiqueta preferida del método
+      - [biolink:category, biolink:EvidenceType] # Relación con tipo de evidencia
+
+  method_mapping_efo:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: efo:$(method_uri_efo)
+    po:
+      - [skos:prefLabel, "$(method)", xsd:string] # Etiqueta preferida del método
+      - [biolink:category, biolink:EvidenceType] # Relación con tipo de evidencia
+
+  method_mapping_bao:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: bao:$(method_uri_bao)
+    po:
+      - [skos:prefLabel, "$(method)", xsd:string] # Etiqueta preferida del método
+      - [biolink:category, biolink:EvidenceType] # Relación con tipo de evidencia 
+
+  biolink_EvidenceType_instance:
+    sources:
+      - ['consulta_2_dbVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:EvidenceType
+    po:
+      - [a, biolink:EvidenceType]  # RDF type for biolink:Gene
+      - [skos:prefLabel, "evidence type", xsd:string]
