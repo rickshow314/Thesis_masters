@@ -1,0 +1,428 @@
+<mxfile host="Electron" modified="2024-05-16T16:48:11.225Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="R_Al27at3PvrImp8FwAI" version="24.4.0" type="device">
+  <diagram name="Página-1" id="qGptg48feIALP0QOibg7">
+    <mxGraphModel dx="1359" dy="1775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="6JE-V1rgDyD5uSml1Uak-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DszhKcmkCLHYVGABEn8L-7" value="rdf:type" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-3" vertex="1" connectable="0">
+          <mxGeometry x="0.0267" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="6JE-V1rgDyD5uSml1Uak-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-8" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];strokeColor=#000000;" parent="6JE-V1rgDyD5uSml1Uak-7" connectable="0" vertex="1">
+          <mxGeometry x="0.1844" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.715;exitY=-0.01;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="6JE-V1rgDyD5uSml1Uak-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="180" />
+              <mxPoint x="829" y="180" />
+            </Array>
+            <mxPoint x="520" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-54" value="obo:RO_0002162&lt;div&gt;&quot;in taxon&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-52" connectable="0" vertex="1">
+          <mxGeometry x="-0.0762" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="-bDPhzSc2MLhFLpv777F-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="-bDPhzSc2MLhFLpv777F-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="315" />
+              <mxPoint x="780" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-1" value="bao:BAO_0000207&lt;div&gt;&quot;has detection method&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-bDPhzSc2MLhFLpv777F-19" vertex="1" connectable="0">
+          <mxGeometry x="0.5757" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="6JE-V1rgDyD5uSml1Uak-61" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="265" />
+              <mxPoint x="780" y="220" />
+              <mxPoint x="1080" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.57;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="-bDPhzSc2MLhFLpv777F-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="625" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-35" value="obo:RO_0002131&lt;div&gt;&quot;overlap&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7Yt5Qs3PYceXHm6uux9-34" vertex="1" connectable="0">
+          <mxGeometry x="0.1142" relative="1" as="geometry">
+            <mxPoint x="91" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.894;exitY=0.989;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="exR66w5LFtaQum01DGlP-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="342" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="570" y="342" />
+              <mxPoint x="570" y="342" />
+              <mxPoint x="570" y="519" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-37" value="biolink:&lt;div&gt;has_molecular&lt;/div&gt;&lt;div&gt;_consequence&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7Yt5Qs3PYceXHm6uux9-36" vertex="1" connectable="0">
+          <mxGeometry x="-0.2039" y="3" relative="1" as="geometry">
+            <mxPoint x="57" y="71" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.354;exitY=1.03;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" target="-bDPhzSc2MLhFLpv777F-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394.1199999999999" y="343.0000000000002" as="sourcePoint" />
+            <mxPoint x="80" y="965" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="395" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-50" value="obo:RO_0003302&lt;div&gt;&quot;causes or contributes to condition&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7Yt5Qs3PYceXHm6uux9-49" vertex="1" connectable="0">
+          <mxGeometry x="0.7021" y="3" relative="1" as="geometry">
+            <mxPoint x="45" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.429;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="L7Yt5Qs3PYceXHm6uux9-150" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="750" />
+              <mxPoint x="440" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-155" value="sio:SIO_000900&lt;div&gt;&quot;has frequency&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7Yt5Qs3PYceXHm6uux9-149" vertex="1" connectable="0">
+          <mxGeometry x="0.8107" y="1" relative="1" as="geometry">
+            <mxPoint x="4" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.142;exitY=0.998;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="KLonrmJRsr6jb7OEbWs5-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="559" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-159" value="obo:RO_0002331&lt;div&gt;&quot;involved in&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7Yt5Qs3PYceXHm6uux9-158" vertex="1" connectable="0">
+          <mxGeometry x="-0.0754" y="-2" relative="1" as="geometry">
+            <mxPoint x="-94" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-1" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Variant &lt;/b&gt;(&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;bgw_hvariant:ID)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; VariantLabel: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:definition&lt;/i&gt;&amp;nbsp;VariantDefinition: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;skos:altLabel&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;VariantAltLabel: string&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;ontoclinvar:&lt;/i&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;reference_allele&lt;/i&gt;&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ReferenceBase: string&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;ontoclinvar:&lt;/i&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;alternate_allele&amp;nbsp;&lt;/i&gt;&lt;/span&gt;AlternativeBase: string&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;i&gt;obo:start position&amp;nbsp;&lt;/i&gt;StartPosition: integer&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;i&gt;obo:end position&lt;/i&gt;&amp;nbsp;EndPosition: integer&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="320" y="240" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DszhKcmkCLHYVGABEn8L-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-2" target="DszhKcmkCLHYVGABEn8L-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DszhKcmkCLHYVGABEn8L-6" value="rdfs:subClassOf" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DszhKcmkCLHYVGABEn8L-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.0686" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-2" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;VariantType_SequenceOntology &lt;/b&gt;(obo:SO_ID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="320" y="70" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-6" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;sequence variant&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;(biolink:SequenceVariant)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-40" y="70" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6JE-V1rgDyD5uSml1Uak-18" target="6JE-V1rgDyD5uSml1Uak-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-15" value="rdfs:subClassOf" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-14" connectable="0" vertex="1">
+          <mxGeometry x="0.0906" y="1" relative="1" as="geometry">
+            <mxPoint x="6" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-18" target="6JE-V1rgDyD5uSml1Uak-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-17" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-16" connectable="0" vertex="1">
+          <mxGeometry x="-0.0421" y="4" relative="1" as="geometry">
+            <mxPoint x="4" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-18" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b style=&quot;&quot;&gt;assembly &lt;/b&gt;(assembly:NCBI_Refseq_assembly)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; AssemblyPrefLabel: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:altLabel &lt;/i&gt;AssemblyAltLabel: string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-400" y="170" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-19" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b style=&quot;&quot;&gt;reference genome &lt;/b&gt;(obo:&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;SO_0001505)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; &quot;reference genome&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-760" y="170" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-20" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b style=&quot;&quot;&gt;genome &lt;/b&gt;(biolink:Genome)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="70" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="6JE-V1rgDyD5uSml1Uak-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-90" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-28" value="dc:hasVersion" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-27" connectable="0" vertex="1">
+          <mxGeometry x="-0.025" y="3" relative="1" as="geometry">
+            <mxPoint x="-112" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="6JE-V1rgDyD5uSml1Uak-38" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-90" y="340" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-41" value="obo:BFO_0000050&lt;div&gt;&quot;part of&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-40" connectable="0" vertex="1">
+          <mxGeometry x="-0.5011" y="-2" relative="1" as="geometry">
+            <mxPoint x="-179" y="90" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-1" target="6JE-V1rgDyD5uSml1Uak-43" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-160" y="290" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="320" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-45" value="obo:GENO_0000906&lt;div&gt;&quot;on strand&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-44" connectable="0" vertex="1">
+          <mxGeometry x="0.14" y="1" relative="1" as="geometry">
+            <mxPoint x="-62" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-38" target="6JE-V1rgDyD5uSml1Uak-39" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-37" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-36" connectable="0" vertex="1">
+          <mxGeometry x="-0.2947" y="-4" relative="1" as="geometry">
+            <mxPoint x="-18" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9ujn6fpOiZaa6l7L4GmL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-38" target="9ujn6fpOiZaa6l7L4GmL-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9ujn6fpOiZaa6l7L4GmL-3" value="rdfs:subClassOf" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="9ujn6fpOiZaa6l7L4GmL-2" connectable="0" vertex="1">
+          <mxGeometry x="0.1386" y="2" relative="1" as="geometry">
+            <mxPoint x="22" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-38" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b style=&quot;&quot;&gt;chromosome &lt;/b&gt;(nuccore:NCBI_Reference_Sequence)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; ChromosomeLabel: string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-400" y="390" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-39" value="&lt;p style=&quot;text-align: center; margin: 4px 0px 0px;&quot;&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;genomic sequence localization&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center; margin: 4px 0px 0px;&quot;&gt;(biolink:&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;GenomicSequenceLocalization)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-760" y="390" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-43" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b style=&quot;&quot;&gt;strand&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;(&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;faldo:ForwardStrandPosition /&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;faldo:&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;ReverseStrandPosition)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; &quot;Positive strand&quot; / &quot;Negative strand&quot;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-410" y="268.75" width="330" height="72.5" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-49" target="6JE-V1rgDyD5uSml1Uak-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-58" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-57" connectable="0" vertex="1">
+          <mxGeometry x="0.1478" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-49" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Taxon &lt;/b&gt;(obo:NCBITaxon_ID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#00CC00;" parent="1" vertex="1">
+          <mxGeometry x="720" y="70" width="218.59" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-50" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;organism taxon&lt;/b&gt; (biolink:&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;OrganismTaxon)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="714.3" y="-50" width="230" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6JE-V1rgDyD5uSml1Uak-61" target="6JE-V1rgDyD5uSml1Uak-62" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-60" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-59" connectable="0" vertex="1">
+          <mxGeometry x="-0.1814" y="-1" relative="1" as="geometry">
+            <mxPoint x="11" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="6JE-V1rgDyD5uSml1Uak-61" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1320" y="80" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-68" value="rdfs:subClassOf" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6JE-V1rgDyD5uSml1Uak-66" connectable="0" vertex="1">
+          <mxGeometry x="-0.028" y="-3" relative="1" as="geometry">
+            <mxPoint x="44" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-61" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Database &lt;/b&gt;(URL database)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; DatabaseLabel: string&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="960" y="145" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-62" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;biolink:&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt;InformationResource&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1321" y="145" width="199" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6JE-V1rgDyD5uSml1Uak-67" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Database &lt;/b&gt;(obo:NCIT_C15426)&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-wrap: nowrap; background-color: initial; text-align: left;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bp%20style%3D%26quot%3Bmargin%3A%204px%200px%200px%3B%20text-align%3A%20center%3B%26quot%3B%26gt%3B%26lt%3Bb%26gt%3Bbiolink%3A%26lt%3B%2Fb%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bbackground-color%3A%20initial%3B%20text-align%3A%20left%3B%26quot%3B%26gt%3B%26lt%3Bb%26gt%3BInformationResource%26lt%3B%2Fb%26gt%3B%26lt%3B%2Fspan%26gt%3B%26lt%3B%2Fp%26gt%3B%26lt%3Bhr%20size%3D%26quot%3B1%26quot%3B%20style%3D%26quot%3Bborder-style%3Asolid%3B%26quot%3B%26gt%3B%26lt%3Bp%20style%3D%26quot%3Bmargin%3A0px%3Bmargin-left%3A8px%3B%26quot%3B%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Fp%26gt%3B%22%20style%3D%22verticalAlign%3Dtop%3Balign%3Dleft%3Boverflow%3Dfill%3Bhtml%3D1%3BwhiteSpace%3Dwrap%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%221201%22%20y%3D%22265%22%20width%3D%22199%22%20height%3D%2250%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; &quot;Database&quot;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1321" y="50" width="199" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9ujn6fpOiZaa6l7L4GmL-1" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b style=&quot;&quot;&gt;chromosome&amp;nbsp;&lt;/b&gt;(obo:&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;SO_0000340)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; &quot;chromosome&quot;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-760" y="490" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;bgw_hvariant&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;http://rdf.biogateway.eu/variant/9606/&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;bgw_variant2phen&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;http://rdf.biogateway.eu/variant2phen/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;bgw_variant2gene http://rdf.biogateway.eu/variant2gene/&lt;/div&gt;&lt;div style=&quot;&quot;&gt;ontoclinvar&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;http://purl.jp/bio/10/clinvar-ontology#&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ncbigene&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;http://identifiers.org/ncbigene/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;uniprot&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://uniprot.org/uniprot/&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;purl_uniprot&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;http://purl.uniprot.org/uniprot/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;obo&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://purl.obolibrary.org/obo/&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;omim&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;http://purl.bioontology.org/ontology/OMIM/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;pubmed&lt;/span&gt;&lt;span style=&quot;background-color: initial; white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;http://identifiers.org/pubmed/&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ncbi_pubmed&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://www.ncbi.nlm.nih.gov/pubmed/&lt;/div&gt;&lt;div&gt;assembly&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;https://www.ncbi.nlm.nih.gov/assembly/&lt;/div&gt;&lt;div&gt;nuccore&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;https://www.ncbi.nlm.nih.gov/nuccore/&lt;/div&gt;&lt;div&gt;skos&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://www.w3.org/2004/02/skos/core#&lt;/div&gt;&lt;div&gt;rdf&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&lt;/div&gt;&lt;div&gt;rdfs&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://www.w3.org/2000/01/rdf-schema#&lt;/div&gt;&lt;div&gt;schema&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://schema.org/&lt;/div&gt;&lt;div&gt;dc&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://purl.org/dc/terms/&lt;/div&gt;&lt;div&gt;sio&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;http://semanticscience.org/resource/&lt;/div&gt;&lt;div&gt;biolink&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;https://w3id.org/biolink/vocab/&lt;/div&gt;&lt;div&gt;linkml&lt;span style=&quot;white-space:pre&quot;&gt;&#x9;&lt;/span&gt;https://w3id.org/linkml/&lt;/div&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="827" y="820" width="334.5" height="326" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-4" value="sio:SIO_000772&lt;div&gt;&quot;has evidence&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="869.9943194381202" y="289.99999010166175" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-bDPhzSc2MLhFLpv777F-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1259.9999999999995" y="287.4814814814815" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-6" value="skos:exactMatch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-bDPhzSc2MLhFLpv777F-5" connectable="0" vertex="1">
+          <mxGeometry x="0.0506" y="-3" relative="1" as="geometry">
+            <mxPoint x="-3" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-7" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;PMID &lt;/b&gt;(pubmed:PMID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="950.0000000000001" y="265" width="180.06" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-8" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;biolink:Article&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1560.0000000000002" y="265" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" target="-bDPhzSc2MLhFLpv777F-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1439.9999999999995" y="287.5" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1440" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-10" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-bDPhzSc2MLhFLpv777F-9" connectable="0" vertex="1">
+          <mxGeometry x="0.0398" y="4" relative="1" as="geometry">
+            <mxPoint x="-2" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-bDPhzSc2MLhFLpv777F-16" target="-bDPhzSc2MLhFLpv777F-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-15" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-bDPhzSc2MLhFLpv777F-14" connectable="0" vertex="1">
+          <mxGeometry x="-0.2286" y="-4" relative="1" as="geometry">
+            <mxPoint x="9" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-16" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Method &lt;/b&gt;(obo:ECO_ID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="950" y="374.99999999999994" width="180.06" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-17" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;biolink:EvidenceType&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="375" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-21" value="sio:SIO_000253&lt;div&gt;&quot;has source&quot;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="869.9933221100215" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="-bDPhzSc2MLhFLpv777F-23" target="-bDPhzSc2MLhFLpv777F-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-23" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Disease &lt;/b&gt;(omim:OMIM_ID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#009900;" parent="1" vertex="1">
+          <mxGeometry x="-84.47000000000003" y="640" width="199.47" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-24" value="skos:exactMatch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="-160" y="664.9982352941174" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-bDPhzSc2MLhFLpv777F-27" target="-bDPhzSc2MLhFLpv777F-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-129.73000000000002" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-26" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-bDPhzSc2MLhFLpv777F-25" connectable="0" vertex="1">
+          <mxGeometry x="-0.0631" y="1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-27" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Disease&amp;nbsp;&lt;/b&gt;(obo:OMIM_ID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-420" y="640" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-28" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;biolink:Disease&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-740" y="640" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="-bDPhzSc2MLhFLpv777F-31" target="-bDPhzSc2MLhFLpv777F-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-30" value="skos:closeMatch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-bDPhzSc2MLhFLpv777F-29" connectable="0" vertex="1">
+          <mxGeometry x="-0.2044" relative="1" as="geometry">
+            <mxPoint x="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-31" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b style=&quot;&quot;&gt;Gene&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;(bgw_hgene:GeneSymbol)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#006600;" parent="1" vertex="1">
+          <mxGeometry x="700" y="600" width="254.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-bDPhzSc2MLhFLpv777F-34" target="-bDPhzSc2MLhFLpv777F-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-33" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="-bDPhzSc2MLhFLpv777F-32" connectable="0" vertex="1">
+          <mxGeometry x="-0.1148" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-34" value="&lt;p style=&quot;text-align: left; margin: 4px 0px 0px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;b&gt;Gene&amp;nbsp;&lt;/b&gt;(ncbigene:geneID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="720" y="708" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-35" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;biolink:Gene&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="708" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-bDPhzSc2MLhFLpv777F-36" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;PMID &lt;/b&gt;(ncbi_pubmed:PMID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="265" width="180.06" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XNP3UVa69Bu0nWPd_njG-3" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Variant Allele Frequency&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt; &lt;/b&gt;(&lt;/span&gt;&lt;span class=&quot;mr-3&quot;&gt;obo:NCIT_C154665&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-150" y="783" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="exR66w5LFtaQum01DGlP-13" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Molecular Consequence&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt; &lt;/b&gt;(&lt;/span&gt;&lt;span class=&quot;mr-3&quot;&gt;SO_ID&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt; MolecularConsequenceLabel: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="699.9999999999999" y="480" width="300" height="77.5" as="geometry" />
+        </mxCell>
+        <mxCell id="9KIsFGIlP7Z-SoxvjUDf-3" value="Entidades ya modeladas en BioGateway" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#00CC00;" parent="1" vertex="1">
+          <mxGeometry x="1251.5" y="820" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9KIsFGIlP7Z-SoxvjUDf-5" value="Entidad central del grafo" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1251.5" y="925" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KLonrmJRsr6jb7OEbWs5-2" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;ClinicalSignificance &lt;/b&gt;(NCIT_ID)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="-85" y="534" width="190" height="50.5" as="geometry" />
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="L7Yt5Qs3PYceXHm6uux9-150" target="XNP3UVa69Bu0nWPd_njG-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-152" value="rdfs:subClassOf" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7Yt5Qs3PYceXHm6uux9-151" vertex="1" connectable="0">
+          <mxGeometry x="0.3603" y="1" relative="1" as="geometry">
+            <mxPoint x="32" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7Yt5Qs3PYceXHm6uux9-150" value="&lt;p style=&quot;text-align: left; margin: 4px 0px 0px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp;VariantAlleleFrequency&lt;/b&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;&lt;b&gt; &lt;/b&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: initial; text-align: left;&quot;&gt;bgw_hvariant:I&lt;/span&gt;D)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;i&gt;skos:prefLabel&lt;/i&gt;&amp;nbsp;VarAllFreqLabel: string&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;i&gt;skos:definition&lt;/i&gt;&amp;nbsp;VarAllFreqDefinition: string&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;i&gt;sio:SIO_000300 &quot;has value&quot;&lt;/i&gt;&amp;nbsp;VarAllFreqValue: double&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;i&gt;sio:SIO_000255 &quot;has annotation&quot;&amp;nbsp;&lt;/i&gt;VarAllFreqFormat: string&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="280" y="758" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DszhKcmkCLHYVGABEn8L-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="DszhKcmkCLHYVGABEn8L-4" target="DszhKcmkCLHYVGABEn8L-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DszhKcmkCLHYVGABEn8L-2" value="biolink:category" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="DszhKcmkCLHYVGABEn8L-1" connectable="0" vertex="1">
+          <mxGeometry x="0.0743" y="1" relative="1" as="geometry">
+            <mxPoint x="1" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DszhKcmkCLHYVGABEn8L-3" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;biolink:OntologyClass&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="-170" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DszhKcmkCLHYVGABEn8L-4" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;sequence alteration&amp;nbsp;&lt;/b&gt;(obo:SO_0001059)&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="320" y="-50" width="280" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
