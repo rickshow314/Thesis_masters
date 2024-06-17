@@ -1,0 +1,312 @@
+prefixes:
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"      
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  skos: "http://www.w3.org/2004/02/skos/core#"
+  obo: "http://purl.obolibrary.org/obo/"
+  bgw_hvariant: "http://rdf.biogateway.eu/variant/9606/"
+  owl: "http://www.w3.org/2002/07/owl#" 
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  sio: "http://semanticscience.org/resource/"
+  biolink: "https://w3id.org/biolink/vocab/"
+  bao: "http://www.bioassayontology.org/bao#"
+  ncbigene: "https://www.ncbi.nlm.nih.gov/gene/"
+  bgw_hgene: "http://rdf.biogateway.eu/gene/9606/" # uso obo
+  bgw_database: "https://www.ncbi.nlm.nih.gov/"
+  nuccore: "https://www.ncbi.nlm.nih.gov/nuccore/"
+  assembly: "https://www.ncbi.nlm.nih.gov/assembly/"
+  dc: "http://purl.org/dc/terms/"
+  bgw_disease: "http://rdf.biogateway.eu/disease/"
+  ontoclinvar: "http://purl.jp/bio/10/clinvar-ontology#"
+  
+
+mappings:
+  variant_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: bgw_hvariant:$(ID_merged) # identificador
+    po:
+      - [rdf:type, obo:$(variant_type_uri)]
+      - [skos:prefLabel, "variant/$(ID_merged)", xsd:string]
+      - [skos:altLabel, "$(desc)$(POS)", xsd:string]
+      - [skos:definition, "SNV located in Homo sapiens position chr$(CHROM):$(POS) produce by a $(CLNVC)", xsd:string]
+      - [obo:GENO_0000894, $(POS), xsd:integer]
+      - [ontoclinvar:reference_allele, $(REF), xsd:string]
+      - [ontoclinvar:alternate_allele, $(ALT), xsd:string]
+      - [sio:SIO_000253, obo:MI_2349]  # Link to the database instance
+      - [obo:BFO_0000050, nuccore:$(CHROM_uri)] # Link to the Chromosome instance
+      - [obo:RO_0002131, "bgw_hgene:$(GENE_SYMBOLS)"]  # overlap with gene
+      - [obo:RO_0002162, obo:NCBITaxon_9606]  # Enlace a la instancia NCBITaxon_9606
+      - [dc:hasVersion, assembly:GCF_000001405.26]  # Enlace a la instancia assembly:GCF_000001405.26
+      - [biolink:category, biolink:SequenceVariant]
+      - [biolink:has_molecular_consequence, obo:$(MC_ID)] # genera error y en vez de ':' pone %3A
+      - [obo:RO_0002331, obo:$(CLNSIG_ID)] #duda
+      - [obo:RO_0003302, bgw_disease:$(OMIM_ID)]  # Esto conecta la variante con la enfermedad causada o contribuida.
+
+  databaseMapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:MI_2349
+    po:
+      - [rdf:type, owl:Class]
+      - [rdfs:subClassOf, obo:NCIT_C15426]
+      - [skos:prefLabel, "$(DB)", xsd:string]
+      - [biolink:category, biolink:InformationResource] # Enlace a InformationResource
+
+  information_resource_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:InformationResource
+    po:
+      - [a, biolink:InformationResource]
+      - [skos:prefLabel, "information resource", xsd:string]
+
+  ncit_database_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:NCIT_C15426
+    po:
+      - [skos:prefLabel, "Database", xsd:string]
+      - [biolink:category, biolink:OntologyClass]
+
+  chromosome_class:
+    sources:
+      - ['consulta_5_clinVar.tsv~cs']  # Asumiendo que tienes un archivo de datos para cromosomas
+    options:
+      delimiter: "\t"
+    s: nuccore:$(CHROM_uri)  # El identificador URI del cromosoma se expande desde los datos
+    po:
+      - [rdf:type, owl:Class]
+      - [skos:prefLabel, "chr-$(CHROM)", xsd:string]  # Etiqueta preferida para el cromosoma
+      - [biolink:category, biolink:GenomicSequenceLocalization]
+      - [rdfs:subClassOf, obo:SO_0000340]  # Subclass of SO:0000340
+
+  chromosome_ontology_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:SO_0000340
+    po:
+      - [a, obo:SO_0000340]  # RDF type for SO:0000340
+      - [skos:prefLabel, "chromosome", xsd:string]  # Preferred label for SO:0000340
+      - [biolink:category, biolink:OntologyClass]  # Link to biolink:OntologyClass
+
+
+  genomic_sequence_localization_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:GenomicSequenceLocalization
+    po:
+      - [a, biolink:GenomicSequenceLocalization]  # RDF type for genomic sequence localization
+      - [skos:prefLabel, "genomic sequence localization", xsd:string]  # Preferred label for genomic sequence localization
+
+  variant_to_organism:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:NCBITaxon_9606  # es el identificador, que es el sujeto,todo lo que ponga aqui lo relacionare con po
+    po:
+      - [obo:RO_0002162, obo:NCBITaxon_9606]  # Relación que indica que la variante está en el taxón Homo sapiens
+      - [skos:prefLabel, "organism taxon", xsd:string]  # Etiqueta que describe el taxón del organismo
+      - [biolink:category, biolink:OrganismTaxon]  # Enlace a la instancia OrganismTaxon
+
+  organism_taxon_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:OrganismTaxon
+    po:
+      - [a, biolink:OrganismTaxon]
+      - [skos:prefLabel, "ontology class", xsd:string]
+  
+  variant_type_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:$(variant_type_uri)
+    po:
+      #- [a, bgw_hvariant:$(ID_merged)]
+      - [rdf:type, owl:Class]
+      - [skos:prefLabel, "$(CLNVC)", xsd:string]
+      - [rdfs:subClassOf, obo:SO_0001059]  # Enlace a la instancia obo:SO_0001059
+
+  variant_type_to_sequence_alteration:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:SO_0001059  # URI dinámico que representa el tipo específico de variante
+    po:
+      - [rdfs:subClassOf, obo:SO_0001059]  # Relación que establece que el tipo de variante es una subclase de 'sequence alteration'
+      - [skos:prefLabel, "sequence alteration", xsd:string]  # Etiqueta que describe el tipo de variante
+      - [biolink:category, biolink:OntologyClass]
+
+  sequence_variant_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:SequenceVariant
+    po:
+      - [a, biolink:SequenceVariant]
+      - [skos:prefLabel, "sequence variant", xsd:string]
+
+  assembly_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: assembly:GCF_000001405.26
+    po:
+      - [rdf:type, owl:Class]
+      #- [a, assembly:GCF_000001405.26] # Define the class for the assembly if needed
+      - [skos:prefLabel, "GRCh38", xsd:string]
+      - [skos:altLabel, "hg38", xsd:string]
+      - [biolink:category, biolink:Genome]
+      - [rdfs:subClassOf, obo:SO_0001505]  # Subclass of reference genome
+
+  genome_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:Genome
+    po:
+      - [a, biolink:Genome]  # RDF type for biolink:Genome
+      - [skos:prefLabel, "genome", xsd:string]  # Preferred label for biolink:Genome
+
+  assembly_to_genome:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: assembly:GCF_000001405.26
+    po:
+      - [biolink:category, biolink:Genome]
+      - [skos:prefLabel, "genome", xsd:string]  # Contextualizando la etiqueta para la relación
+
+  reference_genome_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:SO_0001505
+    po:
+      - [a, obo:SO_0001505]  # RDF type for reference genome
+      - [skos:prefLabel, "reference genome", xsd:string]  # Preferred label for reference genome
+      - [biolink:category, biolink:OntologyClass]  # Link to biolink:OntologyClass
+
+  gene_instance_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: bgw_hgene:$(GENE_SYMBOLS)  # Suponemos que cada símbolo del gen es único y sirve como identificador
+    po:
+      - [a, obo:SO_0000704]  # Utilizamos la clase SO_0000704 (gene) de la ontología Sequence Ontology
+      - [skos:prefLabel, $(GENE_SYMBOLS), xsd:string]
+
+  ncbi_gene_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: ncbigene:$(GENE_IDS)
+    po:
+      - [a, obo:SO_0000704]  # Clase para genes según la ontología de Sequence Ontology
+      #- [skos:prefLabel, "NCBI gene $(GENE_SYMBOLS)", xsd:string] no es necesario ya que ya esta modelado
+
+  gene_close_match_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: bgw_hgene:$(GENE_SYMBOLS)
+    po:
+      - [skos:closeMatch, ncbigene:$(GENE_IDS)]
+
+  biolink_gene_instance:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    # Aquí asumimos que la instancia biolink:Gene es única y no variará por fila de CSV, por lo que no necesita fuentes.
+    s: biolink:Gene
+    po:
+      - [a, obo:SO_0000704]  # Asumimos que biolink:Gene es también un tipo de gene en RDF
+      - [skos:prefLabel, "gene", xsd:string]
+
+  gene_category_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: ncbigene:$(GENE_IDS)
+    po:
+      - [biolink:category, biolink:Gene]
+
+
+  molecular_consequence:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:$(MC_ID) # identificador de la consecuencia molecular
+    po:
+      - [a, obo:NCIT_C97926] # duda
+      - [skos:prefLabel, "$(MC_VALUE)", xsd:string]
+      - [biolink:category, biolink:OntologyClass]
+
+  ontology_class_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:OntologyClass
+    po:
+      - [rdf:type, biolink:OntologyClass]
+      - [skos:prefLabel, "ontology class", xsd:string]
+
+  clinical_significance_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: obo:$(CLNSIG_ID) # identificador de la significancia clínica
+    po:
+      - [a, obo:NCIT_C82562]
+      - [skos:prefLabel, "$(CLNSIG)", xsd:string]
+      - [biolink:category, biolink:OntologyClass]
+
+  disease_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: bgw_disease:$(OMIM_ID)
+    po:
+      - [a, obo:NCIT_C2991]
+      - [biolink:category, biolink:Disease]
+
+  biolink_disease_mapping:
+    sources:
+      - ['consulta_5_clinVar.tsv~csv']
+    options:
+      delimiter: "\t"
+    s: biolink:Disease
+    po:
+      - [rdf:type, biolink:Disease]
+      - [skos:prefLabel, "disease", xsd:string]
