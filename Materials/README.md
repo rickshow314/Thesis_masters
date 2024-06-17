@@ -34,11 +34,3 @@ Here are the queries performed with SPARQL (SPARQL Protocol and RDF Query Langua
 3. **Scripts**: Execute the scripts in `scripts/` to standardize and prepare the data for RDF mapping.
 4. **Mapping**: Uses the mapping files in `mapping/` to transform the standardized data into RDF triples.
 5. **Queries**: Perform SPARQL queries using the files in `queries/` to obtain valuable information and perform comparative analysis.
-
-## Contributions
-
-If you wish to contribute to this project, please follow the guidelines below:
-- Make sure your code is well documented.
-- Include examples and test cases when possible.
-- Make a pull request with a detailed description of your changes.
-
