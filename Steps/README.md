@@ -1,9 +1,9 @@
-Actividades a llevar a cabo:
+The purpose of this readme is to list the activities to be carried out:
 
-- [ ] Familiarización con las bases de datos. Consulta y examen de las bases de datos seleccionadas para comprender su estructura y qué información proporcionan.
-- [ ] Desarrollo de un modelo conceptual.
-- [ ] Preprocesamiento de las bases de datos.
-- [ ] Generación de ficheros RDF.
-- [ ] Generación del grafo de conocimiento.
-- [ ] Realización de casos de usos.
-- [ ] Documentación del trabajo realizado.
+- [✓] Familiarization with databases. Consultation and review of selected databases to understand their structure and what information they provide.
+- [✓] Development of a conceptual model.
+- [✓] Preprocessing of the databases.
+- [✓] RDF file generation.
+- [✓] Generation of the knowledge network.
+- [✓] Realization of use cases.
+- [✓] Documentation of the work done.
