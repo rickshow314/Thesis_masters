@@ -1,4 +1,4 @@
-# Master's Thesis Project Introduction - Integration of Genetic Mutation Data
+# Development of an RDF Model for the Integration and Interoperable Query of Genetic Mutation Data in Several Domains
 
 ## Project Description
 
@@ -26,7 +26,7 @@ This repository is part of a master's thesis project focused on addressing the c
 - RDF and SPARQL for data modeling and querying.
 - Semantic web tools for standardized information representation.
 - Platforms like Virtuoso for knowledge graph management.
-- rdflib and similar tools for RDF file generation.
+- YARRRML and Morph-kgc for RDF file generation.
 
 ## Contribution and Collaboration
 
