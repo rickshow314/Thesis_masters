@@ -1,7 +1,7 @@
 Because the triples take up too much space, I will leave examples of an affordable size together with an image of the values obtained in Protégé and their representation.
 
 ## RDF:
-
+The uploaded RDF files are examples of triples used for some of the queries, they are the simplest examples that can be shared.
 
 ## OWL Protégé:
 
