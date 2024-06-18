@@ -70,21 +70,31 @@ WHERE {
 ```
 
 ## Query 5:
-This query determines the most frequently used method for detecting variants whose affected chromosome is 17. The most common method identified is DNA-seq.
+The purpose of this query is to know to which biolink category chromosome 17 belongs and to check the existence of the object properties associated with Biolink and its federated query to check its operation.
+# Local query
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
 PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX bao: <http://www.bioassayontology.org/bao#>
 PREFIX nuccore: <https://www.ncbi.nlm.nih.gov/nuccore/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
 
-SELECT ?metodo (COUNT(?metodo) AS ?cantidadUsos)
+SELECT ?categoriaBiolink
 WHERE {
-  ?variante obo:BFO_0000050 nuccore:NC_000017.11 ;  # 'part of' el cromosoma 17 usando el identificador NC_000017.11
-            bao:BAO_0000207 ?metodo .  # 'has detection method' para obtener el método de detección
+  nuccore:NC_000017.11 biolink:category ?categoriaBiolink .
 }
-GROUP BY ?metodo
-ORDER BY DESC(?cantidadUsos)
-LIMIT 1
 
+```
+# Federated query
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX nuccore: <https://www.ncbi.nlm.nih.gov/nuccore/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+
+SELECT ?categoriaBiolink
+WHERE {
+  SERVICE <http://ssb4.nt.ntnu.no:23122/sparql> {
+    nuccore:NC_000017.11 biolink:category ?categoriaBiolink .
+  }
+}
 ```
