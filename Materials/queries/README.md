@@ -12,7 +12,7 @@ PREFIX biolink: <https://w3id.org/biolink/vocab/>
 SELECT ?tipoVariante (SAMPLE(?variante) as ?ejemplos)
 WHERE {
   ?variante rdf:type ?tipoVariante .
-  FILTER(STRSTARTS(STR(?tipoVariante), STR(obo:)))  # Asegura que los tipos sean URIs de OBO
+  FILTER(STRSTARTS(STR(?tipoVariante), STR(obo:))) 
 }
 GROUP BY ?tipoVariante
 ORDER BY ?tipoVariante
