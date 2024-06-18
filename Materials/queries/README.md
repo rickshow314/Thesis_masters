@@ -46,7 +46,7 @@ SELECT ?tipoVariante (COUNT(?tipoVariante) AS ?frecuencia)
 WHERE {
   ?variante obo:RO_0002131 bgw_hgene:ACTA2 ;  # Relación 'overlap with gene'
             rdf:type ?tipoVariante .  # Obtiene el tipo de cada variante
-  FILTER(STRSTARTS(STR(?tipoVariante), STR(obo:)))  # Asegura que los tipos sean URIs de OBO
+  FILTER(STRSTARTS(STR(?tipoVariante), STR(obo:)))  
 }
 GROUP BY ?tipoVariante
 ORDER BY DESC(?frecuencia)
